@@ -5,8 +5,12 @@ import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.widget.FrameLayout;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
 
+import com.karenjar.demo.R;
 import com.karenjar.demo.tab.BaseDemoAty;
 import com.karenjar.helper.android.res.AssetsHelper;
 import com.karenjar.helper.java.nio.ArrayToBufferHelper;
@@ -23,9 +27,12 @@ import javax.microedition.khronos.opengles.GL10;
  * Created by Dandy
  * Wechat: flycatdeng
  */
-public abstract class PSBlendAty extends BaseDemoAty{
+public abstract class PSBlendAty extends BaseDemoAty {
     private Context mContext;
     private GLSurfaceView mGLSurfaceView;
+    private TextView mStrengthTV;
+    private SeekBar mStrengthSeekBar;
+    private boolean mIsGLRenderFinished = false;
     private int mGLProgramID = 0;
     private static final float POSITION[] = new float[]{
             -1f, 1f,
@@ -48,8 +55,10 @@ public abstract class PSBlendAty extends BaseDemoAty{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContext = this;
-        mGLSurfaceView = new GLSurfaceView(this);
-        setContentView(mGLSurfaceView);
+        setContentView(R.layout.aty_demo_tab_gl_psblend);
+        mGLSurfaceView = (GLSurfaceView) findViewById(R.id.aty_demo_tab_gl_psblend_glview);
+        mStrengthTV = (TextView) findViewById(R.id.aty_demo_tab_gl_psblend_txt_strength);
+        mStrengthSeekBar = (SeekBar) findViewById(R.id.aty_demo_tab_gl_psblend_txt_seekBar);
         mGLSurfaceView.setEGLContextClientVersion(2);
         mGLSurfaceView.setPreserveEGLContextOnPause(true);
         mGLSurfaceView.setRenderer(new GLSurfaceView.Renderer() {
@@ -68,6 +77,7 @@ public abstract class PSBlendAty extends BaseDemoAty{
 
             @Override
             public void onDrawFrame(GL10 gl) {
+                mIsGLRenderFinished = false;
                 int bgTextureID = TextureHelper.initTextureID(AssetsHelper.getBitmap(mContext, "sunset.PNG"), true);
                 int fgTextureID = TextureHelper.initTextureID(AssetsHelper.getBitmap(mContext, "karen.PNG"), true);
                 GLES20.glUseProgram(mGLProgramID);
@@ -95,10 +105,32 @@ public abstract class PSBlendAty extends BaseDemoAty{
                 GLES20.glDrawElements(GLES20.GL_TRIANGLES, ORDER_TABLE.length, GLES20.GL_UNSIGNED_SHORT, ArrayToBufferHelper.shortArrayToBuffer(ORDER_TABLE));
                 GLES20.glDisableVertexAttribArray(positionHandle);
                 GLES20.glDisableVertexAttribArray(textcoorHandle);
+                mIsGLRenderFinished = true;
             }
         });
         mGLSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
 
+        mStrengthSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean b) {
+                float strength = progress / ((float)mStrengthSeekBar.getMax());
+                mStrengthTV.setText(strength + "");
+                setBlendStrength(strength);
+                if(mIsGLRenderFinished){
+                    mGLSurfaceView.requestRender();
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
 
     @Override
