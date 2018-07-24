@@ -1,9 +1,9 @@
 precision mediump float;
-uniform sampler2D uBackgroundTexture;
-uniform sampler2D uForegroundTexture;
+uniform sampler2D inputImageTexture;
+uniform sampler2D inputImageTexture2;
 uniform float uBlendStrength;
 
-varying vec2 vTextureCoord;
+varying vec2 textureCoordinate;
 
         /*
         * 正常混合
@@ -21,8 +21,8 @@ varying vec2 vTextureCoord;
         }
 
 void main() {
-    vec4 backgroundColor = texture2D(uBackgroundTexture, vTextureCoord);
-    vec4 foregroundColor = texture2D(uForegroundTexture, vTextureCoord);
+    vec4 backgroundColor = texture2D(inputImageTexture, textureCoordinate);
+    vec4 foregroundColor = texture2D(inputImageTexture2, textureCoordinate);
 
      gl_FragColor = NormalBlend(backgroundColor,foregroundColor,uBlendStrength);
 }

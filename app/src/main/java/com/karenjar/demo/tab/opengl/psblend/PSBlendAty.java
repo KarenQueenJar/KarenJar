@@ -81,10 +81,10 @@ public abstract class PSBlendAty extends BaseDemoAty {
                 int bgTextureID = TextureHelper.initTextureID(AssetsHelper.getBitmap(mContext, "sunset.PNG"), true);
                 int fgTextureID = TextureHelper.initTextureID(AssetsHelper.getBitmap(mContext, "karen.PNG"), true);
                 GLES20.glUseProgram(mGLProgramID);
-                int positionHandle = GLES20.glGetAttribLocation(mGLProgramID, "aPosition");
-                int textcoorHandle = GLES20.glGetAttribLocation(mGLProgramID, "aTextureCoord");
-                int uBGTextureHandle = GLES20.glGetUniformLocation(mGLProgramID, "uBackgroundTexture");
-                int uFGTextureHandle = GLES20.glGetUniformLocation(mGLProgramID, "uForegroundTexture");
+                int positionHandle = GLES20.glGetAttribLocation(mGLProgramID, "position");
+                int textcoorHandle = GLES20.glGetAttribLocation(mGLProgramID, "inputTextureCoordinate");
+                int uBGTextureHandle = GLES20.glGetUniformLocation(mGLProgramID, "inputImageTexture");
+                int uFGTextureHandle = GLES20.glGetUniformLocation(mGLProgramID, "inputImageTexture2");
                 int uBlendStrengthHandle = GLES20.glGetUniformLocation(mGLProgramID, "uBlendStrength");
 
                 if (uFGTextureHandle != -1) {
