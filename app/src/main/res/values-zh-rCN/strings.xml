@@ -1,4 +1,5 @@
 <resources>
     <string name="lab_opengl_psblend_normal">PS混合模式/1.正常</string>
     <string name="lab_opengl_psblend_lighten">PS混合模式/8.变亮</string>
+    <string name="lab_opengl_psblend_darken">PS混合模式/3.变暗</string>
 </resources>

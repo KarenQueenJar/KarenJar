@@ -3,5 +3,6 @@
 
     <string name="lab_opengl_psblend_normal">PS BlendMode/1.Normal</string>
     <string name="lab_opengl_psblend_lighten">PS BlendMode/8.Lighten</string>
+    <string name="lab_opengl_psblend_darken">PS BlendMode/3.Darken</string>
 
 </resources>
