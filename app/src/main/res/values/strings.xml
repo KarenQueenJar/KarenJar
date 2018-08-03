@@ -5,5 +5,5 @@
     <string name="lab_opengl_psblend_lighten">PS BlendMode/8.Lighten</string>
     <string name="lab_opengl_psblend_darken">PS BlendMode/3.Darken</string>
     <string name="lab_opengl_psblend_multiply">PS BlendMode/4.Multiply</string>
-
+    <string name="lab_opengl_psblend_linear_dodge">PS BlendMode/11.Linear Dodge</string>
 </resources>
