@@ -4,4 +4,5 @@
     <string name="lab_opengl_psblend_darken">PS混合模式/3.变暗</string>
     <string name="lab_opengl_psblend_multiply">PS混合模式/4.正片叠底</string>
     <string name="lab_opengl_psblend_linear_dodge">PS混合模式/11.线性减淡（相加）</string>
+    <string name="lab_opengl_psblend_linear_burn">PS混合模式/6.线性加深</string>
 </resources>
