@@ -70,6 +70,13 @@
                 <category android:name="com.karenjar.demo.category.OPENGL" />
             </intent-filter>
         </activity>
+        <activity android:name=".tab.opengl.psblend.DifferenceAty"
+            android:label="@string/lab_opengl_psblend_difference">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.karenjar.demo.category.OPENGL" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
