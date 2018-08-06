@@ -1,8 +1,9 @@
 <resources>
-    <string name="lab_opengl_psblend_normal">PS混合模式/1.正常</string>
-    <string name="lab_opengl_psblend_lighten">PS混合模式/8.变亮</string>
-    <string name="lab_opengl_psblend_darken">PS混合模式/3.变暗</string>
-    <string name="lab_opengl_psblend_multiply">PS混合模式/4.正片叠底</string>
+    <string name="lab_opengl_psblend_normal">PS混合模式/01.正常</string>
+    <string name="lab_opengl_psblend_darken">PS混合模式/03.变暗</string>
+    <string name="lab_opengl_psblend_multiply">PS混合模式/04.正片叠底</string>
+    <string name="lab_opengl_psblend_linear_burn">PS混合模式/06.线性加深</string>
+    <string name="lab_opengl_psblend_lighten">PS混合模式/08.变亮</string>
     <string name="lab_opengl_psblend_linear_dodge">PS混合模式/11.线性减淡（相加）</string>
-    <string name="lab_opengl_psblend_linear_burn">PS混合模式/6.线性加深</string>
+    <string name="lab_opengl_psblend_subtract">PS混合模式/22.减去</string>
 </resources>
