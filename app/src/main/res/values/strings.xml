@@ -6,6 +6,7 @@
     <string name="lab_opengl_psblend_multiply">PS BlendMode/04.Multiply</string>
     <string name="lab_opengl_psblend_linear_burn">PS BlendMode/06.Linear Burn</string>
     <string name="lab_opengl_psblend_lighten">PS BlendMode/08.Lighten</string>
+    <string name="lab_opengl_psblend_screen">PS BlendMode/09.Screen</string>
     <string name="lab_opengl_psblend_linear_dodge">PS BlendMode/11.Linear Dodge</string>
     <string name="lab_opengl_psblend_difference">PS BlendMode/20.Difference</string>
     <string name="lab_opengl_psblend_subtract">PS BlendMode/22.Subtract</string>
