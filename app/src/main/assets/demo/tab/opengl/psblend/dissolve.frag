@@ -6,7 +6,7 @@ uniform float uBlendStrength;
 varying vec2 textureCoordinate;
 
 vec3 blendDissolve(vec3 base, vec3 blend) {
-    float random =(gl_FragCoord.x+gl_FragCoord.y)%2.0;
+    float random =mod((gl_FragCoord.x+gl_FragCoord.y),2.0);
 	return mix(base,blend,random);
 }
 
