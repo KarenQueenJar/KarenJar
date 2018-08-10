@@ -1,5 +1,6 @@
 <resources>
     <string name="lab_opengl_psblend_normal">PS混合模式/01.正常</string>
+    <string name="lab_opengl_psblend_dissolve">PS混合模式/02.溶解</string>
     <string name="lab_opengl_psblend_darken">PS混合模式/03.变暗</string>
     <string name="lab_opengl_psblend_multiply">PS混合模式/04.正片叠底</string>
     <string name="lab_opengl_psblend_linear_burn">PS混合模式/06.线性加深</string>

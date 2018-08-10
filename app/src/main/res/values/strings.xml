@@ -2,6 +2,7 @@
     <string name="app_name">KarenJar</string>
 
     <string name="lab_opengl_psblend_normal">PS BlendMode/01.Normal</string>
+    <string name="lab_opengl_psblend_dissolve">PS BlendMode/02.Dissolve</string>
     <string name="lab_opengl_psblend_darken">PS BlendMode/03.Darken</string>
     <string name="lab_opengl_psblend_multiply">PS BlendMode/04.Multiply</string>
     <string name="lab_opengl_psblend_linear_burn">PS BlendMode/06.Linear Burn</string>
