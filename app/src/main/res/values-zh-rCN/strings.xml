@@ -8,6 +8,7 @@
     <string name="lab_opengl_psblend_darker_color">PS混合模式/07.深色</string>
     <string name="lab_opengl_psblend_lighten">PS混合模式/08.变亮</string>
     <string name="lab_opengl_psblend_screen">PS混合模式/09.滤色</string>
+    <string name="lab_opengl_psblend_color_dodge">PS混合模式/10.颜色减淡</string>
     <string name="lab_opengl_psblend_linear_dodge">PS混合模式/11.线性减淡（相加）</string>
     <string name="lab_opengl_psblend_lighter_color">PS混合模式/12.浅色</string>
     <string name="lab_opengl_psblend_overlay">PS混合模式/13.叠加</string>

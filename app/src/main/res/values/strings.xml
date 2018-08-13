@@ -10,6 +10,7 @@
     <string name="lab_opengl_psblend_darker_color">PS BlendMode/07.Darker Color</string>
     <string name="lab_opengl_psblend_lighten">PS BlendMode/08.Lighten</string>
     <string name="lab_opengl_psblend_screen">PS BlendMode/09.Screen</string>
+    <string name="lab_opengl_psblend_color_dodge">PS BlendMode/10.Color Dodge</string>
     <string name="lab_opengl_psblend_linear_dodge">PS BlendMode/11.Linear Dodge</string>
     <string name="lab_opengl_psblend_lighter_color">PS BlendMode/12.Lighter Color</string>
     <string name="lab_opengl_psblend_overlay">PS BlendMode/13.Overlay</string>

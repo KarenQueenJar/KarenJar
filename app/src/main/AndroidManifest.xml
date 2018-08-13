@@ -126,6 +126,13 @@
                 <category android:name="com.karenjar.demo.category.OPENGL" />
             </intent-filter>
         </activity>
+        <activity android:name=".tab.opengl.psblend.ColorDodgeAty"
+            android:label="@string/lab_opengl_psblend_color_dodge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.karenjar.demo.category.OPENGL" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
