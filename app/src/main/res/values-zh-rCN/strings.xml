@@ -3,6 +3,7 @@
     <string name="lab_opengl_psblend_dissolve">PS混合模式/02.溶解</string>
     <string name="lab_opengl_psblend_darken">PS混合模式/03.变暗</string>
     <string name="lab_opengl_psblend_multiply">PS混合模式/04.正片叠底</string>
+    <string name="lab_opengl_psblend_color_burn">PS混合模式/05.颜色加深</string>
     <string name="lab_opengl_psblend_linear_burn">PS混合模式/06.线性加深</string>
     <string name="lab_opengl_psblend_darker_color">PS混合模式/07.深色</string>
     <string name="lab_opengl_psblend_lighten">PS混合模式/08.变亮</string>

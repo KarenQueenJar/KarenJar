@@ -5,6 +5,7 @@
     <string name="lab_opengl_psblend_dissolve">PS BlendMode/02.Dissolve</string>
     <string name="lab_opengl_psblend_darken">PS BlendMode/03.Darken</string>
     <string name="lab_opengl_psblend_multiply">PS BlendMode/04.Multiply</string>
+    <string name="lab_opengl_psblend_color_burn">PS BlendMode/05.Color Burn</string>
     <string name="lab_opengl_psblend_linear_burn">PS BlendMode/06.Linear Burn</string>
     <string name="lab_opengl_psblend_darker_color">PS BlendMode/07.Darker Color</string>
     <string name="lab_opengl_psblend_lighten">PS BlendMode/08.Lighten</string>
