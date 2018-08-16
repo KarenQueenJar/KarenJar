@@ -14,6 +14,7 @@
     <string name="lab_opengl_psblend_overlay">PS混合模式/13.叠加</string>
     <string name="lab_opengl_psblend_soft_light">PS混合模式/14.柔光</string>
     <string name="lab_opengl_psblend_hard_light">PS混合模式/15.强光</string>
+    <string name="lab_opengl_psblend_linear_light">PS混合模式/17.线性光</string>
     <string name="lab_opengl_psblend_difference">PS混合模式/20.差值</string>
     <string name="lab_opengl_psblend_subtract">PS混合模式/22.减去</string>
 </resources>
